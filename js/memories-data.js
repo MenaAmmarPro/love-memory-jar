@@ -8,20 +8,20 @@
  * Each item: { text, date? }  (date is optional, free text like "summer 2023")
  */
 window.MENA_MEMORIES = [
-  { text: "The first time you laughed so hard you couldn't finish your sentence.", date: "" },
-  { text: "That quiet walk where neither of us wanted to be the one to say goodbye.", date: "" },
-  { text: "The night we stayed up talking until the sky started turning soft.", date: "" },
-  { text: "How you always notice the little things I think nobody sees.", date: "" },
-  { text: "The song that started playing and we both just looked at each other.", date: "" },
-  { text: "The first time you fell asleep on my shoulder.", date: "" },
-  { text: "That inside joke that still makes no sense to anyone but us.", date: "" },
-  { text: "The way you say my name when you're happy.", date: "" },
-  { text: "Getting caught in the rain and not caring even a little.", date: "" },
-  { text: "The morning I woke up first and just watched you for a while.", date: "" },
-  { text: "That terrible photo of us that is somehow my favourite.", date: "" },
-  { text: "How brave you are, even on the days you don't feel it.", date: "" },
-  { text: "The first message that made me realise this was different.", date: "" },
-  { text: "Sharing a plate because neither of us wanted to admit we were hungry.", date: "" },
-  { text: "The drive with no destination and the windows down.", date: "" },
-  { text: "How home stopped being a place and started being you.", date: "" }
+  { text: "Meeting on Free Fire — two countries, one sky. Romania to Pakistan.", date: "Free Fire" },
+  { text: "The first ping that somehow felt different, quieter and kinder.", date: "First message" },
+  { text: "From the start it felt like I'd known Himena since before we were born.", date: "Always" },
+  { text: "White, pizza, art and nature — all the lovely things that are you, Mena.", date: "Little facts" },
+  { text: "Staying up way too late talking across timezones — and never wanting to stop.", date: "Timezones" },
+  { text: "That inside joke that only the two of us understand.", date: "Ours" },
+  { text: "How your laugh can make my whole day brighter, no matter how far away.", date: "Your laugh" },
+  { text: "Art — you love it, so I made a hundred little pieces for you.", date: "Art for you" },
+  { text: "Bucharest and Pakistan — different skies, same stars.", date: "Two homes" },
+  { text: "The same moon we both look up at, on different sides of the world.", date: "Same moon" },
+  { text: "You make a place feel like home, just by being you.", date: "Home" },
+  { text: "The way you care — quietly, genuinely, always.", date: "Your heart" },
+  { text: "Every 'goodnight' that leaves me already looking forward to 'good morning'.", date: "Goodnight" },
+  { text: "Long distance doesn't feel so long when it feels this right.", date: "Close" },
+  { text: "The stars we share — now on our little starmap, just for us.", date: "Our sky" },
+  { text: "You make me want to make things — letters, codes, little corners of joy.", date: "Made for you" }
 ];
