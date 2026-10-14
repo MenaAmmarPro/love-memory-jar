@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090b20">
+  <meta name="description" content="A jar full of our little memories — reach in and pull one out. Made for Mena.">
+  <title>Memory Jar ✦ for Mena</title>
+  <link rel="canonical" href="https://ammar49-cyber.github.io/love-memory-jar/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Memory Jar — for Mena">
+  <meta property="og:title" content="Memory Jar ✦ for Mena">
+  <meta property="og:description" content="A jar full of our little memories — reach in and pull one out.">
+  <meta property="og:url" content="https://ammar49-cyber.github.io/love-memory-jar/">
+  <meta property="og:image" content="https://ammar49-cyber.github.io/love-memory-jar/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Memory jar - little notes for Mena">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Memory Jar ✦ for Mena">
+  <meta name="twitter:description" content="A jar full of our little memories — reach in and pull one out.">
+  <meta name="twitter:image" content="https://ammar49-cyber.github.io/love-memory-jar/assets/og-image.png">
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/app.css">
+  <script src="js/theme-main.js" defer></script>
+  <script src="js/effects.js" defer></script>
+  <script src="js/memories-data.js" defer></script>
+  <script src="js/app.js" defer></script>
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Memory Jar">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/icon-192.png">
+</head>
+<body>
+  <canvas id="starfield" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">✦ Memory Jar</a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">Menu</button>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a class="active" href="index.html">The jar</a>
+      <a href="#add">Add a memory</a>
+      <a href="#all">All memories</a>
+      <a href="https://ammar49-cyber.github.io/loveformymena/">Our little universe ↗</a>
+      <button class="theme-toggle" type="button" aria-label="Toggle color theme">Theme</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero jar-hero">
+      <p class="eyebrow">REACH IN, TAKE ONE OUT</p>
+      <div class="moon" aria-hidden="true">🫙</div>
+      <p class="small-caption">Little pieces of us, kept safe.</p>
+      <h1>The memory jar, <span>Mena.</span></h1>
+      <p class="hero-description">
+        A jar of small moments — the ones that made me smile at the time and
+        still do. Shake it, pull one out, and take your time with it.
+      </p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#jar">Open the jar <span>♥</span></a>
+        <a class="button button-ghost" href="#add">Drop one in ↗</a>
+      </div>
+      <p class="signature">Made with love, just for you <span>♥</span></p>
+    </section>
+
+    <section class="section" id="jar">
+      <p class="eyebrow">SHAKE IT AND SEE</p>
+      <h2>Reach <span>in.</span></h2>
+
+      <div class="jar-stage">
+        <div class="jar" id="jar" aria-hidden="true">
+          <div class="jar-lid"></div>
+          <div class="jar-glass">
+            <span class="slip"></span><span class="slip"></span><span class="slip"></span>
+            <span class="slip"></span><span class="slip"></span><span class="slip"></span>
+            <span class="slip"></span><span class="slip"></span>
+          </div>
+        </div>
+        <p class="jar-count" id="memory-count" aria-live="polite"></p>
+
+        <div class="note" id="note" data-open="false">
+          <p class="note-text" id="note-text">Your memory will appear here…</p>
+          <p class="note-date" id="note-date"></p>
+        </div>
+
+        <button class="button button-primary button-large" id="draw" type="button">
+          Draw a memory <span>✦</span>
+        </button>
+        <p class="settings-note" id="memory-status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="section" id="add">
+      <p class="eyebrow">ADD ONE OF YOURS</p>
+      <h2>Drop it <span>in the jar.</span></h2>
+      <p class="section-lead">
+        A moment you don't want to forget — write it down and it'll be there
+        next time you reach in. It stays in your browser, just for you.
+      </p>
+
+      <form class="memory-form" id="memory-form">
+        <label for="memory-text">A memory</label>
+        <textarea id="memory-text" rows="3" maxlength="280" placeholder="That time we…" required></textarea>
+        <label for="memory-date">When (optional)</label>
+        <input id="memory-date" type="text" maxlength="40" placeholder="summer 2023, our trip, a rainy Tuesday…">
+        <div class="form-actions">
+          <button class="button button-primary" id="memory-add" type="submit">Add to the jar <span>♥</span></button>
+          <button class="button button-ghost" id="memory-reset" type="button">Reset to just mine</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="section" id="all">
+      <p class="eyebrow">EVERYTHING IN THE JAR</p>
+      <h2>All the <span>moments.</span></h2>
+      <ul class="memory-list" id="memory-list"></ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Made with care <span>♥</span> for Mena</p>
+    <p class="footer-small">A little universe of its own ✦</p>
+  </footer>
+</body>
+</html>
