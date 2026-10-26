@@ -1,6 +1,6 @@
 "use strict";
 
-const CACHE = "love-memory-jar-v1";
+const CACHE = "love-memory-jar-v2";
 
 const ASSETS = [
   "./",
